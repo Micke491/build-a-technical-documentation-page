@@ -1,0 +1,196 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>JavaScript Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Loops" class="nav-link">Loops</a>
+    <a href="#Objects" class="nav-link">Objects</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a versatile programming language primarily used for web development.</p>
+      <p>It runs in the browser and allows developers to create interactive web pages.</p>
+      <code>console.log("Hello, world!");</code>
+      <ul>
+        <li>Client-side language</li>
+        <li>Dynamically typed</li>
+        <li>First-class functions</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables in JavaScript are used to store data values.</p>
+      <p>You can declare them using var, let, or const.</p>
+      <code>let name = "Nikola";</code>
+      <code>const pi = 3.14;</code>
+      <ul>
+        <li>Use <code>let</code> for reassignable variables</li>
+        <li>Use <code>const</code> for constants</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of code designed to perform a particular task.</p>
+      <p>You can define them in multiple ways.</p>
+      <code>function greet(name) { return "Hello " + name; }</code>
+      <ul>
+        <li>Can be declared or assigned to variables</li>
+        <li>Can be anonymous or named</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to repeat a block of code multiple times.</p>
+      <p>Common types include for, while, and do-while loops.</p>
+      <code>for (let i = 0; i < 5; i++) { console.log(i); }</code>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do-while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects are collections of key-value pairs.</p>
+      <p>They are fundamental to JavaScript's structure.</p>
+      <code>const user = { name: "Nikola", age: 30 };</code>
+      <ul>
+        <li>Can store any data type</li>
+        <li>Used for organizing complex data</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #444;
+}
+
+#navbar header {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 15px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+#main-doc {
+  margin-left: 280px;
+  padding: 40px;
+  max-width: 900px;
+  line-height: 1.7;
+}
+
+.main-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.8em;
+  color: #2a2a2a;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+code {
+  display: block;
+  background: #f0f0f0;
+  padding: 12px 15px;
+  margin: 15px 0;
+  border-left: 5px solid #007acc;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95em;
+  color: #2d2d2d;
+}
+
+ul {
+  padding-left: 25px;
+  margin: 15px 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+    padding: 20px;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+
+** end of styles.css **
+
